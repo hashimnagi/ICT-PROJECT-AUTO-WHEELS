@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Cars — AUTOWHEEL</title>
+<link rel="stylesheet" href="css/buy-cars.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container container">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.webp  " alt="AUTOWHEEL">
+      AUTOWHEEL
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="buy-cars.html" class="active">Buy Cars</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-services-detail">
+  <div class="hero-content">
+    <h1>Buy Premium Cars</h1>
+    <p>Browse verified cars with full details, images, and prices.</p>
+  </div>
+</section>
+
+<!-- CAR LISTINGS -->
+<section class="car-listings container">
+  <div class="car-card">
+    <img src="https://th.bing.com/th/id/OIP.1UxD4OBKTUq2Ti07zjVRxAHaEg?w=300&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Toyota Corolla 2020">
+    <h3>Toyota Corolla 2020</h3>
+    <p class="price">PKR 3,500,000</p>
+    <p>Well-maintained, 50,000 km driven, single owner, full service history.</p>
+  </div>
+  <div class="car-card">
+    <img src="https://th.bing.com/th/id/OIP.mWwdkojOQULbfViukdHjUQHaE8?w=280&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Honda Civic 2019">
+    <h3>Honda Civic 2019</h3>
+    <p class="price">PKR 3,800,000</p>
+    <p>Excellent condition, 45,000 km, single owner, recently serviced.</p>
+  </div>
+  <div class="car-card">
+    <img src="https://th.bing.com/th/id/OIP.2tWR888_vclkQ2r6Q7C5_AHaE5?w=270&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Suzuki Swift 2021">
+    <h3>Suzuki Swift 2021</h3>
+    <p class="price">PKR 2,600,000</p>
+    <p>Low mileage, like new, fully inspected with warranty options.</p>
+  </div>
+  <div class="car-card">
+    <img src="https://th.bing.com/th/id/OIP.urnZameom-5v0QmU4EU7FQHaEI?w=298&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Kia Sportage 2022">
+    <h3>Kia Sportage 2022</h3>
+    <p class="price">PKR 5,200,000</p>
+    <p>New arrival, excellent condition, fully loaded with premium features.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="col">
+      <img src="assets/logo.webp  " alt="AUTOWHEEL" class="logo small">
+      <p class="muted">AUTOWHEEL — premium car marketplace. Trusted by thousands.</p>
+    </div>
+    <div class="col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Contact</h5>
+      <p class="muted">Gujranwala, Pakistan</p>
+      <p class="muted">+92 300 0000000</p>
+      <p class="muted">info@autowheel.com</p>
+    </div>
+    <div class="col">
+      <h5>Newsletter</h5>
+      <p class="muted">Join our mailing list for exclusive offers.</p>
+      <form class="newsletter" onsubmit="return false;">
+        <input placeholder="Email address" />
+        <button class="small-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year-buy"></span> AUTOWHEEL. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Twitter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/buy-car.js"></script>
+</body>
+</html>
