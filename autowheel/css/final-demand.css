@@ -1,5 +1,0 @@
-body{background:linear-gradient(180deg,#071027,#071734);color:#eaf2ff;margin:0;font-family:Inter}
-.container{max-width:800px;margin:0 auto;padding:28px}
-.form{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
-label{display:block;margin-top:8px;color:#cfd9e8}
-input,textarea{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit}
