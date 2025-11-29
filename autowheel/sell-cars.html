@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sell Cars — AUTOWHEEL</title>
+<link rel="stylesheet" href="css/sell-cars.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container container">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.webp " alt="AUTOWHEEL">
+      AUTOWHEEL
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="sell-cars.html" class="active">Sell Cars</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-services-detail">
+  <div class="hero-content">
+    <h1>Sell Your Car</h1>
+    <p>List your car quickly and get the best value through AUTOWHEEL.</p>
+  </div>
+</section>
+
+<!-- SELL FORM -->
+<section class="sell-form container">
+  <form>
+    <label>Car Make & Model</label>
+    <input type="text" placeholder="e.g., Toyota Corolla 2020" required>
+    
+    <label>Year</label>
+    <input type="number" placeholder="e.g., 2020" required>
+    
+    <label>Mileage (km)</label>
+    <input type="number" placeholder="e.g., 50000" required>
+    
+    <label>Price (PKR)</label>
+    <input type="number" placeholder="e.g., 3500000" required>
+    
+    <label>Upload Images</label>
+    <input type="file" multiple required>
+    
+    <button type="submit" class="small-btn">Submit Listing</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="col">
+      <img src="assets/logo.webp " alt="AUTOWHEEL" class="logo small">
+      <p class="muted">AUTOWHEEL — premium car marketplace. Trusted by thousands.</p>
+    </div>
+    <div class="col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Contact</h5>
+      <p class="muted">Karachi, Pakistan</p>
+      <p class="muted">+92 300 0000000</p>
+      <p class="muted">info@autowheel.com</p>
+    </div>
+    <div class="col">
+      <h5>Newsletter</h5>
+      <p class="muted">Join our mailing list for exclusive offers.</p>
+      <form class="newsletter" onsubmit="return false;">
+        <input placeholder="Email address" />
+        <button class="small-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year-sell"></span> AUTOWHEEL. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Twitter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/sell.js"></script>
+</body>
+</html>

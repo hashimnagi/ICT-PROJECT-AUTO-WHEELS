@@ -1,0 +1,193 @@
+:root {
+  --primary: #3674B5;
+  --primary-light: #578FCA;
+  --sky: #A1E3F9;
+  --mint: #D1F8EF;
+  --dark: #1e1e1e;
+  --white: #fff;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--mint);
+  color: var(--dark);
+}
+
+/* NAVBAR */
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: 100%;
+  background: rgba(54, 116, 181, 0.85); /* PRIMARY */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+/* LOGO */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-logo img {
+  width: 45px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #D1F8EF; /* Mint (your color palette) */
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: #A1E3F9; /* Sky Blue */
+  color: #1e1e1e !important;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background: white;
+}
+
+/* ================= HAMBURGER ================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    width: 220px;
+    background: #3674B5;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 0 0 0 15px;
+    text-align: center;
+    gap: 20px;
+    transition: 0.4s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* Hero Section */
+.hero-about {
+  background: linear-gradient(
+      rgba(54, 116, 181, 0.7),
+      rgba(87, 143, 202, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+/* Owners Grid */
+.owners-section {
+  padding: 60px 20px;
+}
+
+.owners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.owner-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 5px solid var(--primary);
+}
+
+/* Why Choose Us */
+.values {
+  padding: 50px 20px;
+  background: var(--sky);
+  border-radius: 12px;
+  margin: 40px auto;
+}
+
+.values-list li {
+  padding: 8px 0;
+  font-size: 18px;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.logo.small {
+  width: 50px;
+}
