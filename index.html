@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AUTOWHEEL — Premium Car Marketplace</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="AUTOWHEEL">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-btn" href="index.html">Home</a></li>
+        <li><a class="nav-btn" href="about.html">About</a></li>
+        <li><a class="nav-btn" href="services.html">Services</a></li>
+        <li><a class="nav-btn" href="contactus.html">Contact</a></li>
+        <li><a class="login-btn" href="login.html">Login</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Dream Car</h1>
+      <p>Premium Marketplace. Verified Sellers. Trusted by Thousands.</p>
+      <a href="services.html" class="btn-hero">Browse Cars</a>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h2>Our Premium Services</h2>
+
+    <div class="service-cards">
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4480503/pexels-photo-4480503.jpeg?auto=compress" alt="Buy Cars">
+        <h3>Buy Cars</h3>
+        <p>Discover premium cars with verified history and best prices.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4480504/pexels-photo-4480504.jpeg?auto=compress" alt="Sell Cars">
+        <h3>Sell Cars</h3>
+        <p>Sell your vehicle securely and get top market value.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3860097/pexels-photo-3860097.jpeg?auto=compress" alt="Car Reviews">
+        <h3>Car Reviews</h3>
+        <p>Expert reviews and reliable guidelines before buying.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+
+      <div class="col">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" class="logo small" alt="AUTOWHEEL">
+        <p>AUTOWHEEL — Your trusted car marketplace.</p>
+      </div>
+
+      <div class="col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Contact</h5>
+        <p>Karachi, Pakistan</p>
+        <p>+92 300 0000000</p>
+        <p>info@autowheel.com</p>
+      </div>
+
+      <div class="col">
+        <h5>Newsletter</h5>
+        <form class="newsletter">
+          <input type="email" placeholder="Email address">
+          <button>Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> AUTOWHEEL. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
